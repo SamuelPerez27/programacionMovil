@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+  <!-- Configuración de Firebase y Google Sign-In -->
+  <meta name="google-signin-client_id" content="469051613822-a743gsouvv2i6nmohhhvrlcnur07nclf.apps.googleusercontent.com">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js"></script>
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-    <base href="$FLUTTER_BASE_HREF">
-  -->
+
+   <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAo_ukYOoRIrsNyKftGwyLYqodBsijiaYM",
+      authDomain: "programacionmovil-ff192.firebaseapp.com",
+      projectId: "programacionmovil-ff192",
+      storageBucket: "programacionmovil-ff192.appspot.com",
+      messagingSenderId: "469051613822",
+      appId: "1:469051613822:web:b6ac500fcab268ed19ae2f",
+      measurementId: "G-7S7MS43Q21"
+    };
+
+    // Inicializar Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
